@@ -55,52 +55,6 @@
         width: 100%;
         flex-direction: column;
     }
-    .header {
-        padding: 10px 20px;
-        background-color: #4a6da7;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header h1 {
-        margin: 0;
-        font-size: 1.5em;
-    }
-    .container {
-        display: flex;
-        flex: 1;
-        overflow: hidden;
-    }
-    #blocklyDiv {
-        flex: 2;
-        height: 100%;
-    }
-    .output-panel {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        background-color: #f5f5f5;
-        border-left: 1px solid #ddd;
-        overflow: hidden;
-        min-width: 300px;
-    }
-    #output {
-        flex: 1;
-        margin: 0;
-        padding: 10px;
-        background-color: #2d2d2d;
-        color: #f8f8f2;
-        font-family: 'Courier New', Courier, monospace;
-        overflow: auto;
-        white-space: pre;
-    }
-    .toolbar {
-        padding: 10px;
-        background-color: #eee;
-        display: flex;
-        justify-content: space-between;
-    }
     button {
         width: min-content;
         padding: 8px 16px;
