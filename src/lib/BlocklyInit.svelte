@@ -11,7 +11,7 @@
                 blockly = (window as any).Blockly;
                 clearInterval(interval);
                 ready = true;
-                blockly.Hexput = generateHexputBlockly(blockly);
+                if (!blockly.Hexput) blockly.Hexput = generateHexputBlockly(blockly);
             }
         }, 100);
 
