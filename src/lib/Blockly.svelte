@@ -8,7 +8,7 @@
     let container = $state<HTMLDivElement>();
     let toolboxElm = $state<Element>();
     let ready = false;
-    let blockly = (window as any).Blockly;
+    let blockly = browser ? (window as any).Blockly : null;
 
     let {
         toolBox,
@@ -33,17 +33,19 @@
 
     onMount(() => {
         let interval = setInterval(() => {
-            if ((window as any).Blockly) {
-                blockly = (window as any).Blockly;
-                clearInterval(interval);
-                ready = true;
-                init();
-                console.log('Blockly initialized');
+            if (browser) {
+                if ((window as any).Blockly) {
+                    blockly = (window as any).Blockly;
+                    clearInterval(interval);
+                    ready = true;
+                    init();
+                    console.log('Blockly initialized');
+                }
             }
         }, 100);
 
         return () => {
-            clearInterval(interval);
+            if (interval) clearInterval(interval);
             if (workspace) {
                 workspace.dispose();
             }
@@ -79,8 +81,6 @@
     width: 100%;
   }
 </style>
-
-
 
 {#if browser}
     <div bind:this={ref} class={className} style="height:{height}; width:{width};">

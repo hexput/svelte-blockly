@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@hexput/blockly':
-        specifier: ^1.0.7
-        version: 1.0.7
+        specifier: ^1.0.10
+        version: 1.0.10
       blockly:
         specifier: ^11.2.2
         version: 11.2.2
@@ -230,8 +230,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hexput/blockly@1.0.7':
-    resolution: {integrity: sha512-scwAg24DFfogcg9Tm0Kj8v6gKlaJq95jgWgMhS3FlbqMA72kxFJgUA0Fnoao1Krusr/qUbQTIdkDxLYaGC6j8Q==}
+  '@hexput/blockly@1.0.10':
+    resolution: {integrity: sha512-au6THS462hzqcee50YZhSe5jbRzfZ3amXThdCcoDxFhPwr69Cxuypxmgcg9oSvzy49/6mfCoTyQEc44AsRlpWg==}
 
   '@jridgewell/gen-mapping@0.3.8':
     resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
@@ -969,7 +969,7 @@ snapshots:
   '@esbuild/win32-x64@0.25.4':
     optional: true
 
-  '@hexput/blockly@1.0.7': {}
+  '@hexput/blockly@1.0.10': {}
 
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:
